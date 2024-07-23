@@ -1,0 +1,50 @@
+{
+  "name": "thanh_nc_solution_5",
+  "version": "1.0.0",
+  "description": "A solution to problem 5 with DDD + Hexagonal architecture",
+  "author": "thanh_nc",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/jest": "^29.5.12",
+    "@types/node": "^20.14.11",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.2.3",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.3"
+  },
+  "dependencies": {
+    "class-validator": "^0.14.1",
+    "express": "^4.19.2",
+    "sqlite3": "^5.1.7",
+    "typeorm": "^0.3.20"
+  },
+  "scripts": {
+    "tsc": "tsc",
+    "start": "ts-node ./src/server.ts"
+  },
+  "jest": {
+    "moduleDirectories": [
+      "node_modules",
+      "src",
+      "test"
+    ],
+    "moduleNameMapper": {
+      "^test/(.*)$": "<rootDir>/$1"
+    },
+    "moduleFileExtensions": [
+      "js",
+      "json",
+      "ts",
+      "hbs"
+    ],
+    "rootDir": "test",
+    "testRegex": ".*\\.spec\\.ts$",
+    "transform": {
+      "^.+\\.ts$": "ts-jest"
+    },
+    "coverageDirectory": "../coverage",
+    "testEnvironment": "node",
+    "testTimeout": 60000
+  }
+}
